@@ -1,0 +1,33 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.content{
+    padding-top: 90px;
+}
+.profile-container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: large;
+}
+
+.profile-info {
+    text-align: center;
+}
+
+#log-out{
+    padding: 5px;
+    margin: 10px;
+    background-color: #45a049;
+    border: none;
+    color: white;
+    border-radius: 5px;
+}
+
+

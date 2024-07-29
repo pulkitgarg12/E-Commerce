@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Page</title>
+    <link rel="shortcut icon" href="images/cool-logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="head.css">
+    <link rel="stylesheet" href="foot.css">
+    <link rel="stylesheet" href="profile.css">
+</head>
+<body>
+    <div class="main">
+        <nav class="head">
+            <input type="checkbox" id="check1" class="check1">
+            <div class="sidebar">
+                <div class="side-head">
+                    <a href="signup.html" class="sign-up">Sign-up</a>
+                    <label class="cross" for="check1">
+                        <span class="glyphicon glyphicon-remove"></span>
+                    </label>
+                </div>
+                <div class="sidebar-gender">
+                    <h2 class="side-h2">Trending</h2>
+                    <a href="categories.html#Best-seller" class="side-button">Best Sellers</a><br>
+                    <a href="categories.html#new-release" class="side-button">New Releases</a><br>
+                    <a href="#" class="side-button">Movers And Shakers</a>
+                </div>
+                <div class="sidebar-gender">
+                    <h2 class="side-h2">Gender</h2>
+                    <a href="categories.html#trending-main" class="side-button">MEN</a>
+                    <a href="categories.html#women-trending" class="side-button">WOMEN</a>
+                </div>
+
+            </div>
+            <div class="head-front">
+
+                <label for="check1">
+                    <span class="glyphicon glyphicon-list list-button"></span>
+                </label>
+                <a href=""><img class="cool-logo" src="images/cool-logo.png" alt=""></a>
+                <div class="bar">
+                    <a href="categories.html#trending-main" class="gender button">MEN</a>
+                    <a href="categories.html#women-trending" class="gender button">WOMEN</a>
+                </div>
+            </div>
+            <div class="head-back">
+                <div class="search-box">
+                    <i class="fa fa-search"></i>
+                    <input class="search" type="text" placeholder="Search">
+                </div>
+                <!-- <a href="login.html" class=" button login">LOGIN</a> -->
+                <a href="cart.html" class="cart icon">
+                    <span class="glyphicon glyphicon-shopping-cart"></span>
+
+                </a>
+                <a href="profile.html" class="profile icon">
+                    <span class="glyphicon glyphicon-user"></span>
+
+                </a>
+
+            </div>
+
+        </nav>
+        <div class="content">
+
+            <div class="profile-container">
+                <div class="profile-info">
+                    <h1>Profile</h1>
+                    <div class="user-info">
+                        <p>USERNAME : <span id="username"></span></p>
+                    </div>
+                    <div class="user-info">
+                        <p>G-Mail   : <span id="mail"></span></p>
+                    </div>
+                    <button id="log-out" onclick="logout()">Log Out</button>
+                </div>
+            </div>
+        </div>
+        
+        
+
+        <div class="footbox">
+
+
+            <div class="foot">
+                <div class="foot-section foot-section1">
+                    <p>Location</p>
+                    <div><a href="">India</a></div>
+                    <div><a href="">USA</a></div>
+                    <div><a href="">Italy</a></div>
+                    <div><a href="">Japan</a></div>
+
+                </div>
+                <div class="foot-section foot-section2">
+                    <p>About</p>
+                    <div><a href="">Contact Us</a></div>
+                    <div><a href="">About Us</a></div>
+                </div>
+
+                <div class="foot-section foot-section4">
+                    <p>Quick Link</p>
+                    <div><a href="categories.html">Home</a></div>
+                    <div><a href="categories.html#trending-main">Male</a></div>
+                    <div><a href="categories.html#women-trending">Female</a></div>
+                    <div><a href="categories.html#trending-main">Categories</a></div>
+
+                </div>
+                <div class="foot-section foot-section3">
+                    <p>Follows</p>
+                    <div class="follow-box">
+                        <a href=""><img class="logo-follow" src="images/facebook.png" alt=""></a>
+                        <a href=""><img class="logo-follow" src="images/instagram.jpeg" alt=""></a>
+                        <a href=""><img class="logo-follow" src="images/linkden.png" alt=""></a>
+                        <a href=""><img class="logo-follow" src="images/telegram.jpeg" alt=""></a>
+                    </div>
+
+                </div>
+
+            </div>
+            <hr>
+            <p class="terms">By continuing past this page, you agree to our Terms of Service, Cookie Policy, Privacy
+                Policy and Content Policies. All trademarks are properties of their respective owners. 2008-
+                2024 © ecomart Ltd. All rights reserved. </p>
+        </div>
+    </div>
+    <script src="profile.js"></script>
+</body>
+</html>

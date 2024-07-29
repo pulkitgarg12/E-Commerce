@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="shortcut icon" href="images/cool-logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="head.css">
+    <link rel="stylesheet" href="categories.css">
+    <link rel="stylesheet" href="foot.css">
+    
+</head>
+
+<body>
+    <div class="main">
+        <nav class="head">
+            <input type="checkbox" id="check1" class="check1">
+            <div class="sidebar">
+                <div class="side-head">
+                    <a href="signup.html" class="sign-up">Sign-up</a>
+                    <label class="cross" for="check1">   
+                        <span class="glyphicon glyphicon-remove"></span>
+                    </label>
+                </div>
+                <div class="sidebar-gender">
+                    <h2 class="side-h2">Trending</h2>
+                    <a href="#Best-seller" class="side-button">Best Sellers</a><br>
+                    <a href="#new-release" class="side-button">New Releases</a><br>
+                    <a href="#" class="side-button">Movers And Shakers</a>
+                </div>
+                <div class="sidebar-gender">
+                    <h2 class="side-h2">Gender</h2>
+                    <a href="#trending-main" class="side-button">MEN</a>
+                    <a href="#women-trending" class="side-button">WOMEN</a>
+                </div>
+
+            </div>
+            <div class="head-front">
+
+                <label for="check1">
+                    <span class="glyphicon glyphicon-list list-button"></span>
+                </label>
+                <a href=""><img class="cool-logo" src="images/cool-logo.png" alt=""></a>
+                <div class="bar">
+                    <a href="#trending-main" class="gender button">MEN</a>
+                    <a href="#women-trending" class="gender button">WOMEN</a>
+                </div>
+            </div>
+            <div class="head-back">
+                <div class="search-box">
+                    <i class="fa fa-search"></i>
+                    <input class="search" type="text" placeholder="Search">
+                </div>
+                <!-- <a href="login.html" class=" button login">LOGIN</a> -->
+                <a href="cart.html" class="cart icon">
+                    <span class="glyphicon glyphicon-shopping-cart"></span>
+
+                </a>
+                <a href="profile.html" class="profile icon">
+                    <span class="glyphicon glyphicon-user"></span>
+
+                </a>
+
+            </div>
+
+        </nav>
+
+        <div class="poster-box">
+            <a href="#trending-main" class="poster-container">
+                <img class="poster-img" src="images/shopmen.webp" alt="">
+            </a>
+            <a href="#women-trending" class="poster-container">
+                <img class="poster-img" src="images/shopwomen.png" alt="">
+            </a>
+        </div>
+
+        <div class="trending-main">
+            <h1 class="trending-heading">TRENDING CATEGORIES</h1>
+            <h2 class="trending-subheading" id="trending-main">MEN</h2>
+            <div class="trending men-trending" id="men-trending">
+                <div class="trending-box"><a href="mainpage.html" onclick="fun1(this)"><img src="images/03-oversizetshirtmen.jpg" alt=""><p>Oversized T-shirts</p></a></div>
+                <div class="trending-box"><a href="mainpage.html" onclick="fun1(this)"><img src="images/05tshirtmen.jpg"alt=""><p>T-shirts</p></a></div>
+                <div class="trending-box"><a href="mainpage.html" onclick="fun1(this)"><img src="images/07joggersmen.jpg" alt=""><p>Joggers</p></a></div>
+                <div class="trending-box"><a href="mainpage.html" onclick="fun1(this)"><img src="images/08jeansmen.jpg"alt=""><p>Jeans</p></a></div>
+                <div class="trending-box"><a href="mainpage.html" onclick="fun1(this)"><img src="images/09shirtmen.jpg"alt=""><p>Shirt</p></a></div>
+            </div>
+            <h2 class="trending-subheading" id="women-trending">Women</h2>
+            <div class="trending women-trending">
+                <div class="trending-box"><a href="mainpage.html" onclick="fun2(this)"><img src="images/04oversizetshirtwomen.jpg" alt=""><p>Oversized T-shirts</p></a></div>
+                <div class="trending-box"><a href="mainpage.html" onclick="fun2(this)"><img src="images/06tshirtwomen.jpg" alt=""><p>T-shirts</p></a></div>
+                <div class="trending-box"><a href="mainpage.html" onclick="fun2(this)"><img src="images/10joggerswomen.jpg" alt=""><p>Joggers</p></a></div>
+                <div class="trending-box"><a href="mainpage.html" onclick="fun2(this)"><img src="images/11jeanswomen.jpg" alt=""><p>Jeans</p></a></div>
+                <div class="trending-box"><a href="mainpage.html" onclick="fun2(this)"><img src="images/122dresswomen.jpg" alt=""><p>Dress</p></a></div>
+            </div>
+        </div>
+
+        <div class="Best-seller-main" id="Best-seller">
+            <h1 class="Best-seller-heading">Best Sellers</h1>
+            <div class="Best-seller">
+                <a class="items" href="#">
+                    <img class="img-item" src="images1/otshirt1.webp">
+                    <div class="item-box">
+                        <p class="title-category">Skull</p>
+                        <p>Men's Black One piece Oversized T-shirt</p>
+                        <img class="star" src="images/5-star.png">
+                        <p class="price">₹ 799</p>
+                        
+                        <button class="add-to-cart" onclick="storetocart('images1/otshirt1.webp','Skull','Mens Black One piece Oversized T-shirt','799')"><i class="fa fa-shopping-cart"> </i> Add to cart</button>
+                    </div>
+                </a>
+                <a class="items" href="#">
+                    <img class="img-item" src="images1/tshirt7.webp">
+                    <div class="item-box">
+                        <p class="title-category">Starry Night</p>
+                        <p>Men's Black Starry Night Printed T-shirt</p>
+                        <img class="star" src="images/5-star.png">
+                        <p class="price">₹ 599</p>
+                        <button class="add-to-cart" onclick="storetocart('images1/tshirt7.webp','Starry Night','Mens Black Starry Night Printed T-shirt','599')"><i class="fa fa-shopping-cart"> </i> Add to cart</button>
+                    </div>
+                </a>
+                <a class="items" href="#">
+                    <img class="img-item" src="images1/tshirtw1.webp">
+                    <div class="item-box">
+                        <p class="title-category">Deadpool</p>
+                        <p>Women's Red XI Graphic Printed T-shirt</p>
+                        <img class="star" src="images/5-star.png">
+                        <p class="price">₹ 599</p>
+                        <button class="add-to-cart" onclick="storetocart('images1/tshirt1.webp','Deadpool','Mens Black Starry Night Printed T-shirt','599')"><i class="fa fa-shopping-cart"> </i> Add to cart</button>
+                    </div>
+                </a>
+                <a class="items" href="#">
+                    <img class="img-item" src="images1/jeansw1.webp">
+                    <div class="item-box">
+                        <p class="title-category">Straight Fit</p>
+                        <p>Women's Black Baggy Straight Fit Jean</p>
+                        <img class="star" src="images/5-star.png">
+                        <p class="price">₹ 1599</p>
+                        <button class="add-to-cart" onclick="storetocart('images1/jeansw1.webp','Straight Fit','Womens Black Baggy Straight Fit Jean','1599')"><i class="fa fa-shopping-car"></i>Add to cart</button>
+                    </div>
+                </a>
+                <a class="items" href="#">
+                    <img class="img-item" src="images1/shirt1.webp">
+                    <div class="item-box">
+                        <p class="title-category">Looney Toones</p>
+                        <p>Men's Red XI Graphic Printed Shirt</p>
+                        <img class="star" src="images/5-star.png">
+                        <p class="price">₹ 999</p>
+                        <button class="add-to-cart" onclick="storetocart('images1/shirt1.webp','Straight Fit','Womens Black Baggy Straight Fit Jean','1599')"><i class="fa fa-shopping-cart"> </i> Add to cart</button>
+                    </div>
+                </a>
+                <a class="items" href="#">
+                    <img class="img-item" src="images1/shirt4.webp">
+                    <div class="item-box">
+                        <p class="title-category">Printed Shirt</p>
+                        <p>Men's White Shirt</p>
+                        <img class="star" src="images/5-star.png">
+                        <p class="price">₹ 1099</p>
+                        <button class="add-to-cart" onclick="storetocart('images1/shirt4.webp','Straight Fit','Womens Black Baggy Straight Fit Jean','1599')"><i class="fa fa-shopping-cart"> </i> Add to cart</button>
+                    </div>
+                </a>
+                <a class="items" href="#">
+                    <img class="img-item" src="images1/jeans5.webp">
+                    <div class="item-box">
+                        <p class="title-category">Baggy Jeans</p>
+                        <p>Men's Blue Straight Fit Jean</p>
+                        <img class="star" src="images/5-star.png">
+                        <p class="price">₹ 1599</p>
+                        <button class="add-to-cart" onclick="storetocart('images1/jeans5.webp','Straight Fit','Womens Black Baggy Straight Fit Jean','1599')"><i class="fa fa-shopping-cart"> </i> Add to cart</button>
+                    </div>
+                </a>
+                <a class="items" href="#">
+                    <img class="img-item" src="images1/joggersw2.webp">
+                    <div class="item-box">
+                        <p class="title-category">Joggers</p>
+                        <p>Women's Cream Joggers</p>
+                        <img class="star" src="images/5-star.png">
+                        <p class="price">₹ 599</p>
+                        <button class="add-to-cart" onclick="storetocart('images1/joggersw2.webp','Straight Fit','Womens Black Baggy Straight Fit Jean','1599')"><i class="fa fa-shopping-cart"> </i> Add to cart</button>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="new-release" id="new-release">
+            <img src="images1/jeans6.webp" class="rel-img" alt="">
+            <div class="rel-box">
+                <p>New Releases This Month</p>
+                <h2>Straigth Fit Jeans</h2>
+                <p class="first-para">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et, a provident. Quos. Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur incidunt unde at officiis officia eum, animi nemo, itaque quibusdam magni asperiores explicabo quos deserunt! Et officiis inventore eos sunt perferendis.</p>
+                <p class="second-para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore esse dolore, adipisci blanditiis molestias aliquid consequuntur maiores similique excepturi. Odit sunt quasi soluta adipisci fuga consequuntur sequi veniam aspernatur sed.</p>
+            </div>
+        </div>
+        <div class="footbox">
+
+
+            <div class="foot">
+                <div class="foot-section foot-section1">
+                    <p>Location</p>
+                    <div><a href="">India</a></div>
+                    <div><a href="">USA</a></div>
+                    <div><a href="">Italy</a></div>
+                    <div><a href="">Japan</a></div>
+
+                </div>
+                <div class="foot-section foot-section2">
+                    <p>About</p>
+                    <div><a href="#">Contact Us</a></div>
+                    <div><a href="#">About Us</a></div>
+                </div>
+
+                <div class="foot-section foot-section4">
+                    <p>Quick Link</p>
+                    <div><a href="">Home</a></div>
+                    <div><a href="#trending-main">Male</a></div>
+                    <div><a href="#women-trending">Female</a></div>
+                    <div><a href="#trending-main">Categories</a></div>
+
+                </div>
+                <div class="foot-section foot-section3">
+                    <p>Follows</p>
+                    <div class="follow-box">
+                        <a href=""><img class="logo-follow" src="images/facebook.png" alt=""></a>
+                        <a href=""><img class="logo-follow" src="images/instagram.jpeg" alt=""></a>
+                        <a href=""><img class="logo-follow" src="images/linkden.png" alt=""></a>
+                        <a href=""><img class="logo-follow" src="images/telegram.jpeg" alt=""></a>
+                    </div>
+
+                </div>
+
+            </div>
+            <hr>
+            <p class="terms">By continuing past this page, you agree to our Terms of Service, Cookie Policy, Privacy
+                Policy and Content Policies. All trademarks are properties of their respective owners. 2008-
+                2024 © ecomart Ltd. All rights reserved. </p>
+        </div>
+    </div>
+    <script src="categories.js"></script>
+</body>
+
+</html>
